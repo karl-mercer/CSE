@@ -32,3 +32,4 @@ def order_fries(total_cost):
 
 	print("\nYou ordered {} fry.".format(size_choice))
 	return total_cost, size_choice
+	
