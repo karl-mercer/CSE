@@ -26,5 +26,5 @@ total_cost, order_list[ketchup_pos] = ketchup.packet_order(total_cost)
 if beverage_size != "no" and fries_size != "no":
 	total_cost -= 1.00
 
-print("\nYour order includes a {} sandwich, {} drink, {} fry, and {} ketchup packets.".format(order_list[sandwich_pos], order_list[drink_pos], order_list[fries_pos], order_list[ketchup_pos]))
+print("\nYour order includes a {} sandwich, {} drink, {} fry, and {} ketchup packets.".format(sandwich_choice, beverage_size, fries_size, ketchup_quantity))
 print("Your total cost is ${}. How would you like to pay?".format(total_cost))
