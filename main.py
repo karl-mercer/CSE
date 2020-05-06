@@ -9,19 +9,18 @@ Combo menu program for CSE.
 """
 
 total_cost = 0.0 #initialize total cost as a float type variable
-order_list = ["", "", "", 0]
-sandwich_pos = 0
-drink_pos = 1
-fries_pos = 2
-ketchup_pos = 3
+sandwich_choice = "no" 
+beverage_size = "no" 
+fries_size = "no" 
+ketchup_quantity = 0 
 
-total_cost, order_list[sandwich_pos] = sandwich.choose_sandwich(total_cost)
+total_cost, sandwich_choice = sandwich.choose_sandwich(total_cost)
 
-total_cost, order_list[drink_pos] = drink.choose_drink(total_cost)
+total_cost, beverage_size = drink.choose_drink(total_cost)
 
-total_cost, order_list[fries_pos] = fries.order_fries(total_cost)
+total_cost, fries_size = fries.order_fries(total_cost)
 
-total_cost, order_list[ketchup_pos] = ketchup.packet_order(total_cost)
+total_cost, ketchup_quantity = ketchup.packet_order(total_cost)
 
 if beverage_size != "no" and fries_size != "no":
 	total_cost -= 1.00
