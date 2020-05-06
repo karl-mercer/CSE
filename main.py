@@ -9,10 +9,10 @@ Combo menu program for CSE.
 """
 
 total_cost = 0.0 #initialize total cost as a float type variable
-sandwich_choice = "no"
-beverage_size = "no"
-fries_size = "no"
-ketchup_quantity = 0
+sandwich_choice = "no" 
+beverage_size = "no" 
+fries_size = "no" 
+ketchup_quantity = 0 
 
 total_cost, sandwich_choice = sandwich.choose_sandwich(total_cost)
 
