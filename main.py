@@ -27,3 +27,4 @@ if beverage_size != "no" and fries_size != "no":
 
 print("\nYour order includes a {} sandwich, {} drink, {} fry, and {} ketchup packets.".format(sandwich_choice, beverage_size, fries_size, ketchup_quantity))
 print("Your total cost is ${}. How would you like to pay?".format(total_cost))
+print("Thank you for your business. Have a nice day!")
