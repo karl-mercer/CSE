@@ -16,13 +16,13 @@ def choose_drink(total_cost):
 			print("Sorry, I'm not sure what you mean.")
 
 	if drink_choice == "small":
-		total_cost += 1.00
+		total_cost += 2.00
 		drink_choice = "a small"
 	elif drink_choice == "medium":
-		total_cost += 1.75
+		total_cost += 2.75
 		drink_choice = "a medium"
 	elif drink_choice == "large":
-		total_cost += 2.25
+		total_cost += 3.25
 		drink_choice = "a large"
 
 	#statement that summarizes the user's order to this point	

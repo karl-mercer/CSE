@@ -30,5 +30,5 @@ def order_fries(total_cost):
 		size_choice = "a large"
 
 
-	print("\nYou ordered {} fry.".format(size_choice))
+	print("\nYou ordered {} fry. This is bad for your health...".format(size_choice))
 	return total_cost, size_choice
