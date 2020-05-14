@@ -9,27 +9,33 @@ Combo menu program for CSE.
 """
 
 total_cost = 0.0 #initialize total cost as a float type variable
-order = [] #creates an empty list to remember the user's order
+user_input = "" #initialize user_input to an empty string
+print("Welcome to McSchnaars! What can I get for you today?")
 
-sandwich_choice = "no" 
-beverage_size = "no" 
-fries_size = "no" 
-ketchup_quantity = 0 
+while user_input != "no":
+	order = [] #creates an empty list to remember the user's order
 
-total_cost, sandwich_choice = sandwich.choose_sandwich(total_cost)
-order.append(sandwich_choice)
+	sandwich_choice = "no" 
+	beverage_size = "no" 
+	fries_size = "no" 
+	ketchup_quantity = 0 
 
-total_cost, beverage_size = drink.choose_drink(total_cost)
-order.append(beverage_size)
+	total_cost, sandwich_choice = sandwich.choose_sandwich(total_cost)
+	order.append(sandwich_choice)
 
-total_cost, fries_size = fries.order_fries(total_cost)
-order.append(fries_size)
+	total_cost, beverage_size = drink.choose_drink(total_cost)
+	order.append(beverage_size)
 
-total_cost, ketchup_quantity = ketchup.packet_order(total_cost)
-order.append(ketchup_quantity)
+	total_cost, fries_size = fries.order_fries(total_cost)
+	order.append(fries_size)
 
-if beverage_size != "no" and fries_size != "no":
-	total_cost -= 1.00
+	total_cost, ketchup_quantity = ketchup.packet_order(total_cost)
+	order.append(ketchup_quantity)
 
-print("\nYour order includes a {} sandwich, {} drink, {} fry, and {} ketchup packets.".format(order[0], order[1], order[2], order[3]))
+	if beverage_size != "no" and fries_size != "no":
+		total_cost -= 1.00
+
+	print("\nYour order includes a {} sandwich, {} drink, {} fry, and {} ketchup packets.".format(order[0], order[1], order[2], order[3]))
+	user_input = input("Is there anything else I can get for you? (yes/no)\n").strip().lower()
+
 print("Your total cost is ${}. How would you like to pay?".format(total_cost))

@@ -1,5 +1,4 @@
 def choose_sandwich(total_cost):
-	print("Welcome to McSchnaars! What can I get for you today?")
 	print("Chicken sandwich".ljust(25, '.')+"$5.25")
 	print("Beef sandwich".ljust(25, '.')+"$6.25")
 	print("Tofu sandwich".ljust(25, '.')+"$5.75\n")

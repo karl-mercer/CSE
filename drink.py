@@ -6,7 +6,7 @@ def choose_drink(total_cost):
 		drink_choice = input("Would you like a beverage? (yes or no)\n\n").strip().lower()
 		if drink_choice == "yes":
 			while drink_choice not in drink_sizes:
-				print("\nWhat size beverage would you like?\n\n"+"Small".ljust(15, '.')+"$1.00\n"+"Medium".ljust(15, '.')+"$1.75\n"+"Large".ljust(15, '.')+"$2.25\n\n")
+				print("\nWhat size beverage would you like?\n\n"+"Small".ljust(15, '.')+"$1.00\n"+"Medium".ljust(15, '.')+"$1.75\n"+"Large".ljust(15, '.')+"$2.25\n")
 				drink_choice = input("Enter your choice: ")
 				if drink_choice not in drink_sizes:
 					print("Sorry, we don't offer a {} drink size.".format(drink_choice))
